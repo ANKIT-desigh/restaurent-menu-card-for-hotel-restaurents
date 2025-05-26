@@ -1,0 +1,412 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <nav class="navbar">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            
+
+            <style>
+                .menu-items {
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                }
+            
+                .menu-items li {
+                    display: inline;
+                }
+            
+                .menu-items a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: black;
+                    font-weight: bold;
+                }
+            </style>
+            
+
+
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#payment">payment</a></li>
+                <li><a href="#table-no">Table No</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <h1 class="logo">AS</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healthy, it is good for our health.</p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .table-button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .table-button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<section id="table-no">
+    <div class="container">
+        <h2>Select a Table</h2>
+        <div class="table-container">
+            <button class="table-button">Table 1</button>
+            <button class="table-button">Table 2</button>
+            <button class="table-button">Table 3</button>
+            <button class="table-button">Table 4</button>
+            <button class="table-button">Table 5</button>
+            <button class="table-button">Table 6</button>
+            <button class="table-button">Table 7</button>
+            <button class="table-button">Table 8</button>
+        </div>
+    </div>
+</section>
+    
+
+
+<section id="payment">
+    <h2>Make Payment</h2>
+    <p>Click the button below to proceed with payment</p>
+    <button id="payButton" class="btn btn-primary">Pay Now</button>
+</section>
+
+<!-- Stripe SDK -->
+<script src="https://js.stripe.com/v3/"></script>
+<script src="payment.js"></script>
+
+
+
+
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've been making healthy food last for 10 years</h2>
+                <p>
+                EAT HEALTHY BE HEALTHY
+                </p>
+            </div>
+<p class="small">rating</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating</title>
+    <style>
+        .rating {
+            display: flex;
+            direction: row-reverse;
+            justify-content: center;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 2em;
+            color: lightgray;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label {
+            color: gold;
+        }
+        .rating input:hover ~ label {
+            color: gold;
+        }
+        .rating label:hover ~ label {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5" title="5 stars">★</label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4" title="4 stars">★</label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3" title="3 stars">★</label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2" title="2 stars">★</label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1" title="1 star">★</label>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    body {
+        background-color: black;
+        color: red;
+    }
+</style>
+
+
+
+            <div class="about-img">
+                <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+            </div>
+        </div>
+    </section>
+    <section id="food">
+        <h2>Types of food</h2>
+        <div class="food-container container">
+            <div class="food-type fruit">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>fruit</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>vegetable</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grain">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>grain</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://t3.ftcdn.net/jpg/04/70/89/20/360_F_470892057_uQvGlkkYETj0PeJx38J8NlHcZwfpw5Rn.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 1</h2>
+                    <p>
+                        PAV BHAJI (MAHARASHTRA SPECIAL DISH)
+                    </p>
+                    <p class="food-price">Price: &#8377; 150</p>
+                    <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://madhurasrecipe.com/wp-content/uploads/2023/03/Patawarachi-Puranpoli-2.jpg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 2</h2>
+                    <p>
+                    PURAN POLI (FESTIVAL SPECIAL)
+                    </p>
+                    <p class="food-price">Price: &#8377; 200</p>
+                    <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.ndtvimg.com/i/2017-10/thali_620x350_71507031336.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 3</h2>
+                    <p>
+                        13 GRAND INDIAN THALI
+                    </p>
+                    <p class="food-price">Price: &#8377; 299</p>
+                    <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/South_Indian_food_cuisine.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 4</h2>
+                    <p>
+                        PURE VEG SOUTH INDIAN THALI
+                    </p>
+                    <p class="food-price">Price: &#8377; 299</p>
+                    <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://www.awesomecuisine.com/wp-content/uploads/2018/03/bhojpuri_thali.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 5</h2>
+                    <p>
+                    BIHAR SPECIAL THALI
+                    </p>
+                    <p class="food-price">Price: &#8377; 299</p>
+                    <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://img.freepik.com/premium-photo/rajasthani-thali-with-traditional-bread_1169880-205963.jpg?semt=ais_hybrid" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Food Menu Item 6</h2>
+                    <p>
+                    RAJESTHANI THALI
+                    </p>
+                    <p class="food-price">Price: &#8377; 299</p>
+                    <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+                <div class="food-menu-item">
+                    <div class="food-img">
+                        <img src="https://media.gettyimages.com/id/839988946/photo/whats-on-your-pizza.jpg?s=612x612&w=0&k=20&c=5PkXCPJivtGk68sbbTZvypqMOGpxkF-NdbRZzTSFqds=" alt="" />
+                    </div>
+                    <div class="food-description">
+                        <h2 class="food-titile">Food Menu Item 7</h2>
+                        <p>
+                        VAROIUS SECTION OF PIZZA
+                        </p>
+                        <p class="food-price">Price: &#8377; 169</p>
+                        <button class="btn btn-primary order-btn">Order Now</button>
+                </div>
+                </div>
+    </section>
+    <section id="testimonials">
+        <h2 class="testimonial-title">What Our Customers Say</h2>
+        <div class="testimonial-container container">
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+                        <p class="customer-name">Ross Lee</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    AMAZING
+                </p>
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg" alt="" />
+                        <p class="customer-name">Amelia Watson</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    MIND BLOWING DISH OF PAV BHAJI
+                </p>
+            </div>
+            <div class="testimonial-box">
+                <div class="customer-detail">
+                    <div class="customer-photo">
+                        <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+                        <p class="customer-name">Ben Roy</p>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonial-text">
+                    DELICIOUS THALI I EVER EAT
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            </div>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h2>Restraunt &copy; all rights reserved</h2>
+    </footer>
+    <!-- .................../ JS Code for smooth scrolling /...................... -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</html>
+</body>
+</html>
+
+
+
+
+
+

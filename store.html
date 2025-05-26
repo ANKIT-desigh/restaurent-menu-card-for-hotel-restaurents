@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Payment Intent</title>
+</head>
+<body>
+  <h1>Test Create Payment Intent</h1>
+  
+  <form id="paymentForm">
+    <input type="text" id="itemId" placeholder="Item ID" required><br><br>
+    <input type="text" id="itemName" placeholder="Item Name" required><br><br>
+    <input type="text" id="customerName" placeholder="Customer Name" required><br><br>
+    <input type="email" id="email" placeholder="Email" required><br><br>
+    <input type="number" id="price" placeholder="Price" required><br><br>
+    <button type="submit">Create Payment Intent</button>
+  </form>
+
+  <pre id="response"></pre>
+
+  <script>
+    document.getElementById("paymentForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      
+      const response = await fetch("http://localhost:3000/create-payment-intent", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          itemId: document.getElementById("itemId").value,
+          itemName: document.getElementById("itemName").value,
+          customerName: document.getElementById("customerName").value,
+          email: document.getElementById("email").value,
+          price: document.getElementById("price").value,
+        }),
+      });
+
+      const data = await response.json();
+      document.getElementById("response").innerText = JSON.stringify(data, null, 2);
+    });
+  </script>
+</body>
+</html>
